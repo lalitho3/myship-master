@@ -1,0 +1,19 @@
+<nav class="navbar">
+    <a href="{% url 'main:index' %}" class="navbar-logo">
+        My relationship
+    </a>
+
+    {% if request.get_full_path == '/upload_post/' %}
+        <a href="{% url 'main:index' %}" class="navbar-enlace">
+            Ir a inicio
+        </a>
+
+    {% else %}
+
+        <a href="{% url 'main:upload_post' %}" class="navbar-enlace">
+            Subir recuerdo
+        </a>
+
+    {% endif %}
+    
+</nav>

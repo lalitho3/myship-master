@@ -1,0 +1,183 @@
+:root {
+    --bg-color: #f3f4f6;
+    --indigo: #4f46e5;
+    --gris-obscuro: #374151;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+}
+
+/* ESTILOS DEL NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.navbar .navbar-logo {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--indigo);
+    text-decoration: none;
+}
+
+.navbar .navbar-enlace {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    background-color: var(--indigo);
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar .navbar-logo {
+        font-size: 1.5rem;
+    }
+
+    .navbar .navbar-enlace {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+}
+
+/* ESTILOS DE LA PÁGINA PRINCIPAL */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem;
+    padding: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+.card .card-title {
+    margin: 1rem 0 0 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--indigo);
+}
+
+.card .card-msg {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.card .card-time {
+    color: var(--gris-obscuro);
+    margin: 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.pagination .step-links .page {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    background-color: var(--indigo);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.pagination .current {
+    color: var(--indigo);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+
+    .pagination .step-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* ESTILOS DEL FORMULARIO */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+.form label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--gris-obscuro);
+    margin: 1rem 0;
+    display: block;
+}
+
+.form .campo {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+.form .btn-submit {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    background-color: var(--indigo);
+    text-align: center;
+    margin: 1rem 0;
+    border: none;
+    cursor: pointer;
+}
